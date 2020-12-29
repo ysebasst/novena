@@ -8,20 +8,17 @@
       <div class="card-body">
         <h3 class="card-header">Cambiar tamaño fuente</h3>
         <div class="card-body">
-          <p>
-            <input
-              type="number"
-              @keyup="cambiarSize(size)"
-              v-model="size"
-              placeholder="Ingrese tamaño"
-            />
-          </p>
+          <form @submit="cambiarSize(size)">
+            <input type="number" v-model="size" placeholder="Ingrese tamaño" />
+            <button type="submit" class="btn">Cambiar</button>
+          </form>
           <p>Fuente 16 por defecto</p>
-          <h3 class="card-header">Vista previa</h3>
-          <div class="card-body" :style="`font-size: ${fontSize}px`">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum,
-            odit.
-          </div>
+          <hr />
+          <h3 class="vista-previa">Vista previa</h3>
+          <p :style="`font-size: ${fontSize}px`">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum,
+            quidem.
+          </p>
         </div>
       </div>
     </div>
@@ -85,8 +82,21 @@ export default {
 p {
   margin-bottom: 1rem;
 }
+form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+}
+form .btn {
+  color: #000;
+}
 input {
+  display: flex;
+  width: 180px;
   padding: 0.5rem 1rem;
   outline: none;
+}
+.vista-previa {
+  padding: 0.5rem 0;
 }
 </style>
