@@ -1,6 +1,6 @@
 # novena
 
-![Preview](https://repository-images.githubusercontent.com/323431665/b6280500-439b-11eb-8620-daf35c84d62a)
+![Preview](https://repository-images.githubusercontent.com/323431665/fd5c5a00-4988-11eb-84ea-f7a77a99a711)
 
 ## Project setup
 ```
