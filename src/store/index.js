@@ -181,7 +181,7 @@ export default new Vuex.Store({
             contenido: [
               [
                 "¡Oh raíz sagrada",
-                "de Jesé, que en lo alto",
+                "de José, que en lo alto",
                 "presentas al orbe",
                 "tu fragante nardo!",
                 "¡Dulcísimo niño",
